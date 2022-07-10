@@ -4,13 +4,13 @@ if(inputline != null)
 {
     int inputnumber = int.Parse (inputline);
     
-    int startNumber = (inputnumber * -1);
+    int startNumber = 1;
 
-    string lineOutPut = "";
+    string lineOutPut = "0";
 
-    while ( startNumber < inputnumber)
+    while ( startNumber <= inputnumber)
     {
-        lineOutPut = lineOutPut+startNumber+",";
+        lineOutPut = startNumber*(-1)+"," +lineOutPut+","+startNumber;
         startNumber++;
     }
 
