@@ -1,0 +1,224 @@
+# Следующая команда работает для загрузки при использовании Git для Windows:
+# curl -LOf http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+#
+# Загрузите этот файл с помощью PowerShell v3 под Windows со следующей командой:
+# Invoke-WebRequest https://gist.githubusercontent.com/kmorcinek/2710267/raw / -Выходной файл .gitignore
+#
+# или wget:
+# wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+
+# Пользовательские файлы
+*.suo
+*.user
+* .sln.docstates
+
+# Результаты сборки
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]в/
+[Oo]bj/
+Папка # build в настоящее время используется для сценариев сборки и не должна игнорироваться
+#сборка/
+
+# Пакеты NuGet
+*.nupkg
+# Папка packages может быть проигнорирована из-за восстановления пакета
+**/packages/*
+# за исключением build/, который используется в качестве целевого объекта MSBuild.
+**!/packages/build/
+# Раскомментируйте, если необходимо, однако, как правило, он будет восстановлен при необходимости
+#!**/packages/repositories.config
+
+# Результаты тестирования MSTest
+[Tt] есть [Rr] результат */
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*.ilk
+*.meta
+* .obj
+* .pch
+* .pdb
+* .pgc
+* .pgd
+* .rsp
+* .sbr
+* .tlb
+* .tli
+* .tlh
+*.tmp
+* .tmp_proj
+*.log
+* .vspscc
+* .vssscc
+.builds
+*.pidb
+* .scc
+
+# Файлы, созданные ОС #
+.DS_Store*
+Значок?
+
+# Файлы кэша Visual C ++
+ipch/
+* .точки доступа
+* .ncb
+* .opensdf
+* .sdf
+*.cachefile
+
+# Профилировщик Visual Studio
+* .psess
+* .vsp
+* .vspx
+
+# Инструментарий автоматизации руководства
+* .gpState
+
+# ReSharper - это надстройка для программирования .NET
+*_ReSharper/
+.*[Rr]e[Ss]харпер
+
+# TeamCity - это надстройка для сборки
+_TeamCity *
+
+# dotCover - это инструмент покрытия кода
+* .dotCover
+
+# NCrunch
+* .ncrunch*
+.* crunch *.local.xml
+
+# Выходная папка Installshield
+[Ee]xpress/
+
+# DocProject - это надстройка генератора документации
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Каталог с одним щелчком мыши
+опубликовать/
+
+# Опубликовать веб-вывод
+*.Publish.xml
+
+# Вывод сборки Windows Azure
+csx
+*.build.csdef
+
+# Windows Store app package directory
+AppPackages/
+
+# Others
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+modulesbin/
+tempbin/
+
+# EPiServer Site file (VPP)
+AppData/
+
+# Проекты RIA/Silverlight
+Сгенерированный код/
+
+# Резервное копирование и создание отчетов о файлах при преобразовании старого файла проекта в более новый
+# Версия Visual Studio. Файлы резервных копий не нужны, потому что у нас есть git ;-)
+_ upgradereport_files/
+* Резервное копирование/
+Журнал обновления * .XML
+Журнал обновления * .htm
+
+# vim
+* .txt ~
+* .swp
+* .swo
+
+# Временные файлы при открытии LibreOffice в ubuntu
+.~блокировка.*
+ 
+# svn
+.svn
+
+# CVS - управление версиями
+**/CVS/
+
+# Остатки от разрешения конфликтов в системе управления версиями
+*.orig
+
+# Файлы SQL Server
+**/App_Data/*.mdf
+**/App_Data/*.ldf
+**/App_Data/*.sdf
+
+
+#Сгенерированные файлы LightSwitch
+Созданные статьи/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Кэширование файлов образов Windows
+Thumbs.db
+ehthumbs.db
+
+# Файл конфигурации папки
+Desktop.ini
+
+# Корзина, используемая в общих файловых ресурсах
+$RECYCLE.BIN/
+
+# Файлы хранилища настольных компьютеров Mac
+.DS_Store
+
+# Кэш компилятора SASS
+.sass-кэш
+
+# Visual Studio 2014 CTP
+**/* .sln.ide
+
+# Visual Studio temp что-то
+.vs/
+
+# dotnet материал
+project.lock.json
+
+# VS 2015+
+* .vc.vc.opendb
+* .vc.db
+
+# Rider
+.idea/
+
+# Код Visual Studio
+.vscode/
+
+# Папка вывода, используемая Webpack или другим материалом FE
+**/node_modules/*
+**/wwwroot/*
+
+# SpecFlow specific
+*.feature.cs
+*.feature.xlsx .*
+*.Specs_*.html
+
+#####
+# Конец основного списка игнорирования, ниже указаны пользовательские настройки "для каждого проекта" (шаблоны или путь)
+#####
