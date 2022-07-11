@@ -1,4 +1,5 @@
 ﻿string? A = Console.ReadLine();//Задача 2
+string? B = Console.ReadLine();
 if(A != null && B != null)
 {
     int numberA = int.Parse (A);
