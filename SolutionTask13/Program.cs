@@ -1,4 +1,4 @@
-﻿//Задача 10 ABC->B
+﻿//Задача 13 третья цифра
 string? x = Console.ReadLine();
 
 if(x != null)
