@@ -5,6 +5,8 @@ int m = int.Parse(Console.ReadLine());
 int[] num = new int [m];
 
 int [] total = Read(m);
+// int keys = Key(total);
+// Print("ниже нуля: " + keys +"   чисел");
 int res = Calculate(total);
 Print(res);
 
@@ -20,12 +22,17 @@ for (int i = 0; i < m; i++)
 return buffer;
 }
 
-int Key(int[] buffer)
-{
-    ConsoleKeyInfo key;
-    key = Console.ReadKey();
-    if ((key.key == NumPad-) && (key.key == D-)  )
-}
+// int Key(int[] buffer)
+// {
+//     int count = 0;
+//     ConsoleKeyInfo key;
+//     key = Console.ReadKey();
+//     if ((key.Key == ConsoleKey.NumPad0) && (key.Key == ConsoleKey.D0))
+//     {
+//         count++;
+//     }
+//     return count;
+// }
 
 int Calculate (int[] buffer)
 {
