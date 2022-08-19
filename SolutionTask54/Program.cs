@@ -75,4 +75,3 @@ Console.WriteLine("Строки по убыванию: ");
 int[,] sortArray = BubbleSortRowsIn2dArray(bufferArray);
 PrintArray2d(sortArray);
 
-//не могу понять компилятор пропускает а прога не работает??? виснет
