@@ -20,16 +20,17 @@ int[,,] FillingArray3d(int countRow, int countColum, int countFat)
             while (k < countFat)
             {
                 outArray[i, j, k] = numberSintezator.Next(10, 100);
-                if (outArray.Contains(numberSintezator))
-                {
-                    i--;
-                    j--;
-                    k--;
-                }
-                else
-                {
-                    outArray[i,j,k] = numberSintezator;
-                }
+                // циклы чтоб исключать повторение - не работают
+                // if (outArray.Contains(numberSintezator))// строка выдает ошибку!
+                // {
+                //     i--;
+                //     j--;
+                //     k--;
+                // }
+                // else
+                // {
+                //     outArray[i,j,k] = numberSintezator.Next(10, 100);;
+                // }
                 k++;
             }
             j++;
@@ -42,7 +43,7 @@ int[,,] FillingArray3d(int countRow, int countColum, int countFat)
 //  METHOD печать массива 3d 
 void PrintArray3d(int[,,] inputArray)
 {
-    int i = 0; int j = 0; k=0;
+    int i = 0; int j = 0; int k=0;
     while (i < inputArray.GetLength(0))
     {
         j = 0;
@@ -64,23 +65,3 @@ void PrintArray3d(int[,,] inputArray)
 
 int [,,] a = FillingArray3d(2,2,2);
 PrintArray3d(a);
-// num
-// list<int> number
-// int (,,) A
-// while
-// {
-//     if
-//     {
-//         (number.contain)
-//     }
-
-//     else
-//     {
-
-//         a
-//     }
-//     NullableComparer random random.next
-// }
-// print
-
-// массив спирально
