@@ -20,7 +20,7 @@ int NuturalNumberPrinter (int num)
     else // на этом шаге цикл падает вниз и выдает с конца
     {
         num--;// num = num-1
-        Console.WriteLine(num);
+        Console.WriteLine(num); // для наглядности как проходил спуск по стекам
         Console.Write(NuturalNumberPrinter(num)+" ");// снова метод
     }
     return num;
