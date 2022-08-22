@@ -12,6 +12,7 @@ Console.Write("Столбы: ");
 int countColum = int.Parse(Console.ReadLine());
 
 int[,] spiral = FillSpiralTwoDimArray(countRow,countColum);
+// int[,] spiral = FillSpiral(int[,] matrix, int startnumber = 1, int count = 1);
 PrintArray2d(spiral);
 
 // Метод - задать спиральный массив (скачал из сети и адаптировал в метод)
@@ -25,7 +26,7 @@ int[,] FillSpiralTwoDimArray(int countRow, int countColum)
     for (int i = 0; i < a.Length; i++)
     {
         a[row, col] = i + 1;// чтобы обратить массив против часовой - поменять местами row и col
-        if (--gran == 0)
+        if (--gran == 0)// --реверс - уменьшение на единицу
         {
             gran = countColum * (dirChanges % 2) + countRow * ((dirChanges + 1) % 2) - (dirChanges / 2 - 1) - 2;
             int temp = dx;
@@ -38,6 +39,21 @@ int[,] FillSpiralTwoDimArray(int countRow, int countColum)
     }
     return a;
 }
+
+// // Рекурсивный код
+// int Promt (string maessage)
+// {
+//     Console.Write(message);
+//     string numStr = Console.ReadLine();
+//     int num = int.Parse(numStr);
+//     return num;
+// }
+
+int[,] FillSpiral(int[,] matrix, int startnumber = 1, int count = 1);
+{
+    
+}
+
 
 //  METHOD печать массива 2d
 void PrintArray2d(int[,] inputArray)
@@ -58,6 +74,8 @@ void PrintArray2d(int[,] inputArray)
 }
 
 
+
+
 // ДЛЯ СПрАВКИ - ниже - сидел пытался вывести код сам получилась такая туфта
 
 // // метод для заполнения двумерного массива по спирали
@@ -73,7 +91,7 @@ void PrintArray2d(int[,] inputArray)
 //             buf = j;
 //             outArray[i, j] = buf;
 //             j++;
-//         }
+//         }13
 //     }
 //     i = i + 1;
 //     while (j <= countColum - 1)
